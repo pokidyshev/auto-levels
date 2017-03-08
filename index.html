@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Levels</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3"><img src="images/1.jpg" alt="" class="photoscript"></div>
+        <div class="col-sm-3"><img src="images/1.jpg" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><img src="images/2.jpg" alt="" class="photoscript"></div>
+        <div class="col-sm-3"><img src="images/2.jpg" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><img src="images/3.jpg" alt="" class="photoscript"></div>
+        <div class="col-sm-3"><img src="images/3.jpg" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><img src="images/4.jpg" alt="" class="photoscript"></div>
+        <div class="col-sm-3"><img src="images/4.jpg" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><img src="images/5.jpg" alt="" class="photoscript"></div>
+        <div class="col-sm-3"><img src="images/5.jpg" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><img src="images/6.jpg" alt="" class="photoscript"></div>
+        <div class="col-sm-3"><img src="images/6.jpg" alt=""></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        Array.prototype.slice.apply(document.querySelectorAll('img.photoscript')).forEach(function(img){
+            new PhotoScript(img).autoLevels().show()
+        });
+    });
+</script>
+</body>
+</html>
